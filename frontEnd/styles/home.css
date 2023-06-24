@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@300&display=swap");
+:root {
+  --font-Family-: Roboto;
+  --color-pinkWhite-: #f6d8f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+}
+.headerMobile {
+  background-color: #f368e0;
+  height: 4.375rem;
+  width: 300px;
+  border-right: 0.5px solid black;
+}
+.photoProfile {
+  border-radius: 2.8125rem;
+  height: 3.125rem;
+  width: 3.125rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.625rem;
+}
+.avatarPpal {
+  border-radius: 2.8125rem;
+  height: 3.125rem;
+  width: 3.125rem;
+}
+.sections {
+  display: flex;
+}
+.chatsDiv {
+  background-color: var(--color-pinkWhite-);
+  font-size: 1.25rem;
+  font-weight: bolder;
+  padding: 10px;
+  font-family: Roboto;
+  width: 300px;
+}
+.divMobile {
+  border-right: 0.5px solid black;
+}
+.busqueda {
+  background-color: whitesmoke;
+  height: 3.125rem;
+  padding: 0.4375rem;
+  display: flex;
+  border-radius: 0.9375rem;
+  width: 300px;
+}
+#buscadorInput {
+  width: 260px;
+  height: 1.875rem;
+  border: none;
+  padding: 0.1875rem;
+  text-align: center;
+  background-color: whitesmoke;
+  font-size: 1rem;
+  font-family: var(--font-Family-);
+}
+.buscarIcon {
+  background-color: whitesmoke;
+  width: 1.25rem;
+  height: 1.25rem;
+  justify-content: center;
+  position: relative;
+  top: 0.3125rem;
+}
+.contacto {
+  width: 18.75rem;
+  display: grid;
+  grid:
+    "avatarContact nom date"
+    "avatarContact readingCheck message";
+  padding: 10px;
+  background-color: var(--color-pinkWhite-);
+  align-items: center;
+  border-top: 0.5px solid #ffabf4;
+}
+.avatarContact {
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  grid-area: avatarContact;
+  border-radius: 45px;
+  border: none;
+}
+.nom {
+  padding: 2px;
+  font-size: var(--font-Family-);
+  font-weight: bolder;
+}
+.date {
+  color: grey;
+  font-family: var(--font-Family-);
+  font-weight: bolder;
+  justify-self: right;
+}
+.message {
+  padding: 0.3125rem;
+  font-family: var(--font-Family-);
+  font-size: 0.8125rem;
+}
+.divDesktop {
+  width: 100%;
+  visibility: visible;
+}
+.mainSection {
+  background-image: url(../images/fondoChat.png);
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.headerDesktop {
+  background-color: #f368e0;
+  height: 4.375rem;
+  width: calc(100vw - 18.75rem);
+  display: flex;
+  padding: 0.625rem;
+  gap: 0.9375rem;
+  visibility: visible;
+}
+.photoProfileHeader {
+  visibility: visible;
+}
+.divContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  visibility: visible;
+}
+.searchChatContact {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  top: 0.3125rem;
+  left: 650px;
+  visibility: visible;
+}
+.mainMsjs {
+  min-height: calc(100vh - 4.375rem - 55px);
+  visibility: visible;
+}
+.sendMsjs {
+  background-color: var(--color-pinkWhite-);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  gap: 20px;
+  visibility: visible;
+}
+.emojisTable,
+.adjuntar {
+  width: 30px;
+  height: 30px;
+  visibility: visible;
+}
+.msjAudio {
+  width: 30px;
+  height: 30px;
+  visibility: visible;
+}
+.enviarMsj {
+  width: 30px;
+  height: 30px;
+  visibility: visible;
+}
+.messageSend {
+  height: 25px;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+  width: 55vw;
+  visibility: visible;
+}
+@media (max-width: 300px) {
+  .headerDesktop,
+  .photoProfileHeader,
+  .divContact,
+  .searchChatContact,
+  .divDesktop,
+  .sendMsjs,
+  .emojisTable,
+  .adjuntar,
+  .messageSend {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "usuarios": [
+    "id":,
+    "nom":,
+    "phone":,
+    "password":,
+    "urlProfileImage":,
+    "flag":,
+    "info":,
+    "lastConnection":,
+  ],
+  "mensajes": [
+    "idUser1":,
+    "idUser2":,
+    "convarsations":{[
+        "sendBy":,
+        "date":,
+        "hour":,
+        "message":,
+        "flag":,
+    ]}
+  ]
+}
